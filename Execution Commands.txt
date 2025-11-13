@@ -23,3 +23,15 @@ open test-output/cucumber-reports/cucumber.html
 
 # Allure Report
 mvn allure:serve
+Complete Test Execution Flow
+# Step 1: Clean and Run Tests
+mvn clean test
+
+# Step 2: View Extent Report (Auto-opens in browser)
+open test-output/ExtentReports/SparkReport.html
+
+# Step 3: Generate & Serve Allure Report
+mvn allure:serve
+
+# Step 4: View Cucumber Report
+open test-output/cucumber-reports/cucumber.html

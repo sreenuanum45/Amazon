@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary"></span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Nov 13, 2025 07:59:40 pm</span></a>
+<a href="#"><span class="badge badge-primary">Nov 13, 2025 08:23:33 pm</span></a>
 </li>
 </ul>
 </div>
@@ -66,13 +66,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Nov 13, 2025 07:59:40 pm</h3>
+<h3>Nov 13, 2025 08:23:33 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Nov 13, 2025 08:02:28 pm</h3>
+<h3>Nov 13, 2025 08:27:42 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -162,7 +162,7 @@
 </div></div>
 <script>
 var timeline = {
-"Amazon Add to Cart Functionality":164.177
+"Amazon Add to Cart Functionality":243.019
 };
 </script>
 <div class="row">
@@ -171,14 +171,6 @@ var timeline = {
 <div class="card-header"><p>Tags</p></div>
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
-<tr>
-<td>@QuantityIncrement</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
 <tr>
 <td>@DataDriven</td>
 <td>4</td>
@@ -204,7 +196,7 @@ var timeline = {
 <td>100%</td>
 </tr>
 <tr>
-<td>@AmazonAutomation</td>
+<td>@RegressionTest</td>
 <td>6</td>
 <td>0</td>
 <td>0</td>
@@ -212,7 +204,15 @@ var timeline = {
 <td>100%</td>
 </tr>
 <tr>
-<td>@RegressionTest</td>
+<td>@QuantityIncrement</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@AmazonAutomation</td>
 <td>6</td>
 <td>0</td>
 <td>0</td>
@@ -290,20 +290,20 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@QuantityIncrement</a><a class="dropdown-item" href="#">@DataDriven</a><a class="dropdown-item" href="#">@SmokeTest</a><a class="dropdown-item" href="#">@AddToCart</a><a class="dropdown-item" href="#">@AmazonAutomation</a><a class="dropdown-item" href="#">@RegressionTest</a>
+<a class="dropdown-item" href="#">@DataDriven</a><a class="dropdown-item" href="#">@SmokeTest</a><a class="dropdown-item" href="#">@AddToCart</a><a class="dropdown-item" href="#">@RegressionTest</a><a class="dropdown-item" href="#">@QuantityIncrement</a><a class="dropdown-item" href="#">@AmazonAutomation</a>
 </ul>
 </li>
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="pass" test-id="1"
+        <li class="test-item"  status="pass" test-id="2"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">Amazon Add to Cart Functionality</p>
             <p class="text-sm">
-              <span>7:59:42 pm</span> / <span>00:02:44:177</span>
+              <span>8:23:35 pm</span> / <span>00:04:03:019</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -312,10 +312,10 @@ eventsCount: 5,
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">Amazon Add to Cart Functionality</h5>
-<span class='badge badge-success'>11.13.2025 7:59:42 pm</span>
-<span class='badge badge-danger'>11.13.2025 8:02:27 pm</span>
-<span class='badge badge-default'>00:02:44:177</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-success'>11.13.2025 8:23:35 pm</span>
+<span class='badge badge-danger'>11.13.2025 8:27:38 pm</span>
+<span class='badge badge-default'>00:04:03:019</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
@@ -329,7 +329,7 @@ So that I can verify the cart behavior when adding same product multiple times</
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Search product and add to cart once</div>
+        <div class="node" id="3"><span class="badge log pass-bg mr-2">Pass</span>Search product and add to cart once</div>
       </div>
     </div>
         <div class="collapse">
@@ -370,7 +370,7 @@ So that I can verify the cart behavior when adding same product multiple times</
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="12"><span class="badge log pass-bg mr-2">Pass</span>Add same product to cart twice and verify quantity increment</div>
+        <div class="node" id="14"><span class="badge log pass-bg mr-2">Pass</span>Add same product to cart twice and verify quantity increment</div>
       </div>
     </div>
         <div class="collapse">
@@ -436,14 +436,14 @@ So that I can verify the cart behavior when adding same product multiple times</
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="27"><span class="badge log pass-bg mr-2">Pass</span>Search different products and add to cart</div>
+        <div class="node" id="30"><span class="badge log pass-bg mr-2">Pass</span>Search different products and add to cart</div>
       </div>
     </div>
         <div class="scenario_outline collapse">
             <div class="card-body l1">
               <div class="card-header">
                 <div class="card-title outline-child">
-                  <div class="node" id="28"><span class="badge log pass-bg mr-2">Pass</span>Search different products and add to cart</div>
+                  <div class="node" id="31"><span class="badge log pass-bg mr-2">Pass</span>Search different products and add to cart</div>
                 </div>
               </div>
               <div class="card-body mt-3 collapse">
@@ -482,7 +482,7 @@ So that I can verify the cart behavior when adding same product multiple times</
             <div class="card-body l1">
               <div class="card-header">
                 <div class="card-title outline-child">
-                  <div class="node" id="38"><span class="badge log pass-bg mr-2">Pass</span>Search different products and add to cart</div>
+                  <div class="node" id="42"><span class="badge log pass-bg mr-2">Pass</span>Search different products and add to cart</div>
                 </div>
               </div>
               <div class="card-body mt-3 collapse">
@@ -521,7 +521,7 @@ So that I can verify the cart behavior when adding same product multiple times</
             <div class="card-body l1">
               <div class="card-header">
                 <div class="card-title outline-child">
-                  <div class="node" id="48"><span class="badge log pass-bg mr-2">Pass</span>Search different products and add to cart</div>
+                  <div class="node" id="53"><span class="badge log pass-bg mr-2">Pass</span>Search different products and add to cart</div>
                 </div>
               </div>
               <div class="card-body mt-3 collapse">
@@ -560,7 +560,7 @@ So that I can verify the cart behavior when adding same product multiple times</
             <div class="card-body l1">
               <div class="card-header">
                 <div class="card-title outline-child">
-                  <div class="node" id="58"><span class="badge log pass-bg mr-2">Pass</span>Search different products and add to cart</div>
+                  <div class="node" id="64"><span class="badge log pass-bg mr-2">Pass</span>Search different products and add to cart</div>
                 </div>
               </div>
               <div class="card-body mt-3 collapse">
@@ -621,42 +621,6 @@ So that I can verify the cart behavior when adding same product multiple times</
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@QuantityIncrement</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@QuantityIncrement</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>20:00:14 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='12'>Add same product to cart twice and verify quantity increment</a>
-<div class="">
-<span class="badge badge-default">Amazon Add to Cart Functionality.Add same product to cart twice and verify quantity increment</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
 <span class='badge log pass-bg'>4</span>
 </span>
 <p class="name">@DataDriven</p>
@@ -678,9 +642,9 @@ So that I can verify the cart behavior when adding same product multiple times</
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>20:00:49 pm</td>
+<td>20:25:42 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='28'>Search different products and add to cart</a>
+<a href="#" class="linked" test-id='2' id='31'>Search different products and add to cart</a>
 <div class="">
 <span class="badge badge-default">Amazon Add to Cart Functionality.Search different products and add to cart</span>
 </div>
@@ -688,9 +652,9 @@ So that I can verify the cart behavior when adding same product multiple times</
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>20:01:14 pm</td>
+<td>20:26:25 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='38'>Search different products and add to cart</a>
+<a href="#" class="linked" test-id='2' id='42'>Search different products and add to cart</a>
 <div class="">
 <span class="badge badge-default">Amazon Add to Cart Functionality.Search different products and add to cart</span>
 </div>
@@ -698,9 +662,9 @@ So that I can verify the cart behavior when adding same product multiple times</
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>20:01:43 pm</td>
+<td>20:26:51 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='48'>Search different products and add to cart</a>
+<a href="#" class="linked" test-id='2' id='53'>Search different products and add to cart</a>
 <div class="">
 <span class="badge badge-default">Amazon Add to Cart Functionality.Search different products and add to cart</span>
 </div>
@@ -708,9 +672,9 @@ So that I can verify the cart behavior when adding same product multiple times</
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>20:02:06 pm</td>
+<td>20:27:15 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='58'>Search different products and add to cart</a>
+<a href="#" class="linked" test-id='2' id='64'>Search different products and add to cart</a>
 <div class="">
 <span class="badge badge-default">Amazon Add to Cart Functionality.Search different products and add to cart</span>
 </div>
@@ -744,9 +708,9 @@ So that I can verify the cart behavior when adding same product multiple times</
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>19:59:42 pm</td>
+<td>20:23:35 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>Search product and add to cart once</a>
+<a href="#" class="linked" test-id='2' id='3'>Search product and add to cart once</a>
 <div class="">
 <span class="badge badge-default">Amazon Add to Cart Functionality.Search product and add to cart once</span>
 </div>
@@ -780,9 +744,9 @@ So that I can verify the cart behavior when adding same product multiple times</
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>19:59:42 pm</td>
+<td>20:23:35 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>Search product and add to cart once</a>
+<a href="#" class="linked" test-id='2' id='3'>Search product and add to cart once</a>
 <div class="">
 <span class="badge badge-default">Amazon Add to Cart Functionality.Search product and add to cart once</span>
 </div>
@@ -790,9 +754,131 @@ So that I can verify the cart behavior when adding same product multiple times</
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>20:00:14 pm</td>
+<td>20:24:35 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='12'>Add same product to cart twice and verify quantity increment</a>
+<a href="#" class="linked" test-id='2' id='14'>Add same product to cart twice and verify quantity increment</a>
+<div class="">
+<span class="badge badge-default">Amazon Add to Cart Functionality.Add same product to cart twice and verify quantity increment</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>6</span>
+</span>
+<p class="name">@RegressionTest</p>
+<p class="duration text-sm">6 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@RegressionTest</h4>
+<span status="pass" class='badge log pass-bg'>6 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:23:35 pm</td>
+<td>
+<a href="#" class="linked" test-id='2' id='3'>Search product and add to cart once</a>
+<div class="">
+<span class="badge badge-default">Amazon Add to Cart Functionality.Search product and add to cart once</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:24:35 pm</td>
+<td>
+<a href="#" class="linked" test-id='2' id='14'>Add same product to cart twice and verify quantity increment</a>
+<div class="">
+<span class="badge badge-default">Amazon Add to Cart Functionality.Add same product to cart twice and verify quantity increment</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:25:42 pm</td>
+<td>
+<a href="#" class="linked" test-id='2' id='31'>Search different products and add to cart</a>
+<div class="">
+<span class="badge badge-default">Amazon Add to Cart Functionality.Search different products and add to cart</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:26:25 pm</td>
+<td>
+<a href="#" class="linked" test-id='2' id='42'>Search different products and add to cart</a>
+<div class="">
+<span class="badge badge-default">Amazon Add to Cart Functionality.Search different products and add to cart</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:26:51 pm</td>
+<td>
+<a href="#" class="linked" test-id='2' id='53'>Search different products and add to cart</a>
+<div class="">
+<span class="badge badge-default">Amazon Add to Cart Functionality.Search different products and add to cart</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:27:15 pm</td>
+<td>
+<a href="#" class="linked" test-id='2' id='64'>Search different products and add to cart</a>
+<div class="">
+<span class="badge badge-default">Amazon Add to Cart Functionality.Search different products and add to cart</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@QuantityIncrement</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@QuantityIncrement</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:24:35 pm</td>
+<td>
+<a href="#" class="linked" test-id='2' id='14'>Add same product to cart twice and verify quantity increment</a>
 <div class="">
 <span class="badge badge-default">Amazon Add to Cart Functionality.Add same product to cart twice and verify quantity increment</span>
 </div>
@@ -826,9 +912,9 @@ So that I can verify the cart behavior when adding same product multiple times</
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>19:59:42 pm</td>
+<td>20:23:35 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>Search product and add to cart once</a>
+<a href="#" class="linked" test-id='2' id='3'>Search product and add to cart once</a>
 <div class="">
 <span class="badge badge-default">Amazon Add to Cart Functionality.Search product and add to cart once</span>
 </div>
@@ -836,9 +922,9 @@ So that I can verify the cart behavior when adding same product multiple times</
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>20:00:14 pm</td>
+<td>20:24:35 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='12'>Add same product to cart twice and verify quantity increment</a>
+<a href="#" class="linked" test-id='2' id='14'>Add same product to cart twice and verify quantity increment</a>
 <div class="">
 <span class="badge badge-default">Amazon Add to Cart Functionality.Add same product to cart twice and verify quantity increment</span>
 </div>
@@ -846,9 +932,9 @@ So that I can verify the cart behavior when adding same product multiple times</
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>20:00:49 pm</td>
+<td>20:25:42 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='28'>Search different products and add to cart</a>
+<a href="#" class="linked" test-id='2' id='31'>Search different products and add to cart</a>
 <div class="">
 <span class="badge badge-default">Amazon Add to Cart Functionality.Search different products and add to cart</span>
 </div>
@@ -856,9 +942,9 @@ So that I can verify the cart behavior when adding same product multiple times</
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>20:01:14 pm</td>
+<td>20:26:25 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='38'>Search different products and add to cart</a>
+<a href="#" class="linked" test-id='2' id='42'>Search different products and add to cart</a>
 <div class="">
 <span class="badge badge-default">Amazon Add to Cart Functionality.Search different products and add to cart</span>
 </div>
@@ -866,9 +952,9 @@ So that I can verify the cart behavior when adding same product multiple times</
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>20:01:43 pm</td>
+<td>20:26:51 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='48'>Search different products and add to cart</a>
+<a href="#" class="linked" test-id='2' id='53'>Search different products and add to cart</a>
 <div class="">
 <span class="badge badge-default">Amazon Add to Cart Functionality.Search different products and add to cart</span>
 </div>
@@ -876,95 +962,9 @@ So that I can verify the cart behavior when adding same product multiple times</
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>20:02:06 pm</td>
+<td>20:27:15 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='58'>Search different products and add to cart</a>
-<div class="">
-<span class="badge badge-default">Amazon Add to Cart Functionality.Search different products and add to cart</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>6</span>
-</span>
-<p class="name">@RegressionTest</p>
-<p class="duration text-sm">6 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@RegressionTest</h4>
-<span status="pass" class='badge log pass-bg'>6 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>19:59:42 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='2'>Search product and add to cart once</a>
-<div class="">
-<span class="badge badge-default">Amazon Add to Cart Functionality.Search product and add to cart once</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>20:00:14 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='12'>Add same product to cart twice and verify quantity increment</a>
-<div class="">
-<span class="badge badge-default">Amazon Add to Cart Functionality.Add same product to cart twice and verify quantity increment</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>20:00:49 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='28'>Search different products and add to cart</a>
-<div class="">
-<span class="badge badge-default">Amazon Add to Cart Functionality.Search different products and add to cart</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>20:01:14 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='38'>Search different products and add to cart</a>
-<div class="">
-<span class="badge badge-default">Amazon Add to Cart Functionality.Search different products and add to cart</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>20:01:43 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='48'>Search different products and add to cart</a>
-<div class="">
-<span class="badge badge-default">Amazon Add to Cart Functionality.Search different products and add to cart</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>20:02:06 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='58'>Search different products and add to cart</a>
+<a href="#" class="linked" test-id='2' id='64'>Search different products and add to cart</a>
 <div class="">
 <span class="badge badge-default">Amazon Add to Cart Functionality.Search different products and add to cart</span>
 </div>

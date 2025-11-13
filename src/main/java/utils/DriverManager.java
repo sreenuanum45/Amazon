@@ -16,19 +16,22 @@ public class DriverManager {
 
     private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
 
+    private DriverManager() {}
+
     public static WebDriver getDriver() {
         return driver.get();
     }
 
-    public static void setDriver(WebDriver driverInstance) {
+    private static void setDriver(WebDriver driverInstance) {
         driver.set(driverInstance);
     }
 
     public static void initializeDriver() {
         String browser = ConfigReader.getBrowser().toLowerCase();
-        WebDriver webDriver = null;
+        WebDriver webDriver;
 
         switch (browser) {
+
             case AppConstants.CHROME:
 
                 ChromeOptions chromeOptions = new ChromeOptions();
@@ -37,35 +40,31 @@ public class DriverManager {
                 chromeOptions.addArguments("--disable-popup-blocking");
                 chromeOptions.addArguments("--disable-blink-features=AutomationControlled");
                 chromeOptions.setExperimentalOption("excludeSwitches", new String[]{"enable-automation"});
+                if (ConfigReader.isHeadless()) chromeOptions.addArguments("--headless=new");
 
-                if (ConfigReader.isHeadless()) {
-                    chromeOptions.addArguments("--headless");
-                }
                 webDriver = new ChromeDriver(chromeOptions);
                 break;
 
             case AppConstants.FIREFOX:
                 WebDriverManager.firefoxdriver().setup();
-                FirefoxOptions firefoxOptions = new FirefoxOptions();
-                if (ConfigReader.isHeadless()) {
-                    firefoxOptions.addArguments("--headless");
-                }
-                webDriver = new FirefoxDriver(firefoxOptions);
+                FirefoxOptions ffOptions = new FirefoxOptions();
+                if (ConfigReader.isHeadless()) ffOptions.addArguments("--headless");
+
+                webDriver = new FirefoxDriver(ffOptions);
                 webDriver.manage().window().maximize();
                 break;
 
             case AppConstants.EDGE:
                 WebDriverManager.edgedriver().setup();
                 EdgeOptions edgeOptions = new EdgeOptions();
-                if (ConfigReader.isHeadless()) {
-                    edgeOptions.addArguments("--headless");
-                }
+                if (ConfigReader.isHeadless()) edgeOptions.addArguments("--headless=new");
+
                 webDriver = new EdgeDriver(edgeOptions);
                 webDriver.manage().window().maximize();
                 break;
 
             default:
-                throw new IllegalArgumentException("Browser " + browser + " is not supported");
+                throw new RuntimeException("Unsupported browser: " + browser);
         }
 
         webDriver.manage().timeouts().implicitlyWait(
@@ -81,7 +80,7 @@ public class DriverManager {
     public static void quitDriver() {
         if (getDriver() != null) {
             getDriver().quit();
-            driver.remove();
+            driver.remove(); // ❗ prevents memory leaks during parallel execution
         }
     }
 }
