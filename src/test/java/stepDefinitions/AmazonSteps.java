@@ -31,6 +31,7 @@ public class AmazonSteps {
     @Given("I am on Amazon homepage")
     public void i_am_on_amazon_homepage() {
         homePage = new HomePage(DriverManager.getDriver());
+        homePage.handleContinueShopping();
         Assert.assertTrue(homePage.isHomePageDisplayed(),
                 "Amazon homepage is not displayed");
         System.out.println("✓ Amazon homepage loaded successfully");

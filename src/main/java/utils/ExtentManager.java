@@ -52,6 +52,8 @@ public class ExtentManager {
         extent.setSystemInfo("Environment", ConfigReader.getProperty("environment"));
         extent.setSystemInfo("Browser", ConfigReader.getBrowser());
         extent.setSystemInfo("OS", System.getProperty("os.name"));
+
+
         extent.setSystemInfo("Java Version", System.getProperty("java.version"));
         extent.setSystemInfo("User", System.getProperty("user.name"));
         extent.setSystemInfo("Test Framework", "Cucumber + TestNG + Selenium");

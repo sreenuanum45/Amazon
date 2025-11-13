@@ -1,15 +1,21 @@
 package pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import utils.DriverManager;
+
+import java.util.List;
 
 public class HomePage extends BasePage {
 
     // Locators using data-testid, id, and other unique attributes
     @FindBy(id = "twotabsearchtextbox")
     private WebElement searchBox;
-
+@FindBy(xpath="//button[text()='Continue shopping']")
+private WebElement continueShopingButton;
     @FindBy(id = "nav-search-submit-button")
     private WebElement searchButton;
 
@@ -42,4 +48,18 @@ public class HomePage extends BasePage {
     public String getCartCount() {
         return getElementText(cartCount);
     }
+    public void handleContinueShopping() {
+waitForPageLoad();
+        List<WebElement> elements = DriverManager.getDriver()
+                .findElements(By.xpath("//button[text()='Continue shopping']")); // your locator
+
+        if (!elements.isEmpty()) {
+            WebElement continueShoppingButton = elements.get(0);
+            wait.until(ExpectedConditions.elementToBeClickable(continueShoppingButton));
+            clickElement(continueShoppingButton);
+        }
+    }
+
+
+
 }

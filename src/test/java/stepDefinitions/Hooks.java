@@ -36,6 +36,7 @@ public class Hooks {
 
         // Initialize Driver
         DriverManager.initializeDriver();
+
         DriverManager.getDriver().get(ConfigReader.getUrl());
 
         test.log(Status.INFO, "Browser launched: " + ConfigReader.getBrowser());

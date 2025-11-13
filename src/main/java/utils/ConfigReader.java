@@ -43,4 +43,5 @@ public class ConfigReader {
     public static int getExplicitWait() {
         return Integer.parseInt(properties.getProperty("explicitWait", "20"));
     }
+
 }
