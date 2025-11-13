@@ -1,0 +1,25 @@
+# Clean and run all tests
+mvn clean test
+
+# Run with specific tags
+mvn clean test -Dcucumber.filter.tags="@AddToCart"
+
+# Run in headless mode
+mvn clean test -Dheadless=true
+
+# Serve Allure report (Opens in browser automatically)
+mvn allure:serve
+
+# Generate Allure report (Creates HTML files)
+mvn allure:report
+
+# Open generated report
+allure open target/allure-reports
+# Extent Report
+open test-output/ExtentReports/SparkReport.html
+
+# Cucumber Report
+open test-output/cucumber-reports/cucumber.html
+
+# Allure Report
+mvn allure:serve

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Amazon Automation Test Suite" parallel="false" thread-count="1" verbose="1">
+
+    <!-- Listeners for Allure Reports -->
+    <listeners>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+        <listener class-name="utils.TestListener"/>
+    </listeners>
+
+    <test name="Amazon Add to Cart Tests" preserve-order="true">
+        <classes>
+            <class name="runners.TestRunner"/>
+        </classes>
+    </test>
+
+</suite>

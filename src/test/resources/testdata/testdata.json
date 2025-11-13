@@ -1,0 +1,14 @@
+{
+  "searchKeyword": "wireless mouse",
+  "expectedQuantity": 2,
+  "alternativeSearchKeywords": [
+    "laptop stand",
+    "usb cable",
+    "bluetooth speaker",
+    "wireless keyboard"
+  ],
+  "expectedMessages": {
+    "addedToCart": "Added to Cart",
+    "proceedToCheckout": "Proceed to checkout"
+  }
+}

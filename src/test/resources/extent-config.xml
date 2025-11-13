@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extentreports>
+    <configuration>
+        <!-- Report Theme: STANDARD or DARK -->
+        <theme>STANDARD</theme>
+
+        <!-- Document Encoding -->
+        <encoding>UTF-8</encoding>
+
+        <!-- Title of the Report -->
+        <documentTitle>Amazon Automation - Extent Report</documentTitle>
+
+        <!-- Name of the Report -->
+        <reportName>Amazon Add to Cart - Detailed Test Report</reportName>
+
+        <!-- Timestamp Format -->
+        <timeStampFormat>MMM dd, yyyy HH:mm:ss</timeStampFormat>
+
+        <!-- Report Headline -->
+        <css>
+            <![CDATA[
+                .logo-container {
+                    text-align: center;
+                    padding: 20px;
+                }
+                .test-name {
+                    font-size: 16px;
+                    font-weight: bold;
+                    color: #2c3e50;
+                }
+                .r-img {
+                    width: 100%;
+                    max-width: 800px;
+                }
+            ]]>
+        </css>
+
+        <!-- JavaScript -->
+        <scripts>
+            <![CDATA[
+                $(document).ready(function() {
+                    console.log('Amazon Automation Extent Report Loaded');
+                });
+            ]]>
+        </scripts>
+    </configuration>
+</extentreports>
