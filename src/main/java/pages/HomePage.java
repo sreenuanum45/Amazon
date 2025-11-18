@@ -49,7 +49,7 @@ private WebElement continueShopingButton;
         return getElementText(cartCount);
     }
     public void handleContinueShopping() {
-waitForPageLoad();
+
         List<WebElement> elements = DriverManager.getDriver()
                 .findElements(By.xpath("//button[text()='Continue shopping']")); // your locator
 
