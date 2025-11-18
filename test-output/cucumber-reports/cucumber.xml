@@ -1,16 +1,144 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="132.19" tests="3" skipped="0" failures="1" errors="0">
-<testcase classname="Amazon Add to Cart Functionality" name="Search product and add to cart once" time="129.727">
+<testsuite name="Cucumber" time="335.952" tests="6" skipped="0" failures="2" errors="0">
+<testcase classname="Amazon Add to Cart Functionality" name="Search different products and add to cart - Example #1.2" time="291.535">
 <system-out><![CDATA[
 Given I am on Amazon homepage...............................................passed
-When I search for a product.................................................passed
+When I search for "laptop stand"............................................passed
 And I click on the first non-sponsored product..............................passed
 Then I should see the product title and price...............................passed
 When I click on Add to Cart button..........................................passed
 Then I should see "Added to cart" confirmation message......................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Amazon Add to Cart Functionality" name="Add same product to cart twice and verify quantity increment" time="80.162">
+<testcase classname="Amazon Add to Cart Functionality" name="Search product and add to cart once" time="329.817">
+<failure type="org.openqa.selenium.TimeoutException" message="java.util.concurrent.TimeoutException
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [27966dc64f1e6638bb63385760370476, findElements {using=css selector, value=div[data-component-type='s-search-result']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.163, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\sreenu\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51476}, goog:processID: 27944, networkConnectionEnabled: false, pageLoadStrategy: none, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51476/devtoo..., se:cdpVersion: 142.0.7444.163, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 27966dc64f1e6638bb63385760370476">
+<![CDATA[org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [27966dc64f1e6638bb63385760370476, findElements {using=css selector, value=div[data-component-type='s-search-result']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.163, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\sreenu\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51476}, goog:processID: 27944, networkConnectionEnabled: false, pageLoadStrategy: none, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51476/devtoo..., se:cdpVersion: 142.0.7444.163, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 27966dc64f1e6638bb63385760370476
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:427)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:212)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElements(ElementLocation.java:182)
+	at org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:103)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:393)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:387)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElements(DefaultElementLocator.java:83)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:36)
+	at jdk.proxy2/jdk.proxy2.$Proxy32.iterator(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions$9.apply(ExpectedConditions.java:263)
+	at org.openqa.selenium.support.ui.ExpectedConditions$9.apply(ExpectedConditions.java:260)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at pages.BasePage.waitForElementsToBeVisible(BasePage.java:35)
+	at pages.SearchResultsPage.areSearchResultsDisplayed(SearchResultsPage.java:31)
+	at stepDefinitions.AmazonSteps.i_click_on_the_first_non_sponsored_product(AmazonSteps.java:55)
+	at ✽.I click on the first non-sponsored product(file:///D:/Myprojects/Amazon/src/test/resources/features/AmazonAddToCart.feature:13)
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture$Timeout.run(CompletableFuture.java:2920)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:317)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at --- Async.Stack.Trace --- (captured by IntelliJ IDEA debugger)
+	at java.base/java.util.concurrent.FutureTask.<init>(FutureTask.java:151)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.<init>(ScheduledThreadPoolExecutor.java:215)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor.schedule(ScheduledThreadPoolExecutor.java:561)
+	at java.base/java.util.concurrent.CompletableFuture$Delayer.delay(CompletableFuture.java:2869)
+	at java.base/java.util.concurrent.CompletableFuture.orTimeout(CompletableFuture.java:2753)
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.executeAsync(JdkHttpClient.java:408)
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:413)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:212)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElements(ElementLocation.java:182)
+	at org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:103)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:393)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:387)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElements(DefaultElementLocator.java:83)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:36)
+	at jdk.proxy2/jdk.proxy2.$Proxy32.iterator(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions$9.apply(ExpectedConditions.java:263)
+	at org.openqa.selenium.support.ui.ExpectedConditions$9.apply(ExpectedConditions.java:260)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at pages.BasePage.waitForElementsToBeVisible(BasePage.java:35)
+	at pages.SearchResultsPage.areSearchResultsDisplayed(SearchResultsPage.java:31)
+	at stepDefinitions.AmazonSteps.i_click_on_the_first_non_sponsored_product(AmazonSteps.java:55)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:80)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:17)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:317)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at --- Async.Stack.Trace --- (captured by IntelliJ IDEA debugger)
+	at java.base/java.util.concurrent.FutureTask.<init>(FutureTask.java:132)
+	at java.base/java.util.concurrent.AbstractExecutorService.newTaskFor(AbstractExecutorService.java:113)
+	at java.base/java.util.concurrent.ExecutorCompletionService.newTaskFor(ExecutorCompletionService.java:129)
+	at java.base/java.util.concurrent.ExecutorCompletionService.submit(ExecutorCompletionService.java:185)
+	at org.testng.internal.PoolService.submitTasksAndWait(PoolService.java:44)
+	at org.testng.internal.invokers.MethodRunner.runInParallel(MethodRunner.java:132)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:946)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+</failure>
+<system-out><![CDATA[
+Given I am on Amazon homepage...............................................passed
+When I search for a product.................................................passed
+And I click on the first non-sponsored product..............................failed
+Then I should see the product title and price...............................skipped
+When I click on Add to Cart button..........................................skipped
+Then I should see "Added to cart" confirmation message......................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Amazon Add to Cart Functionality" name="Search different products and add to cart - Example #1.4" time="330.621">
+<system-out><![CDATA[
+Given I am on Amazon homepage...............................................passed
+When I search for "bluetooth speaker".......................................passed
+And I click on the first non-sponsored product..............................passed
+Then I should see the product title and price...............................passed
+When I click on Add to Cart button..........................................passed
+Then I should see "Added to cart" confirmation message......................passed
+]]></system-out>
+</testcase>
+<testcase classname="Amazon Add to Cart Functionality" name="Add same product to cart twice and verify quantity increment" time="324.106">
 <system-out><![CDATA[
 Given I am on Amazon homepage...............................................passed
 When I search for a product.................................................passed
@@ -25,31 +153,64 @@ And I should verify the quantity is incremented to 2........................pass
 And I should verify the subtotal equals price times quantity................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Amazon Add to Cart Functionality" name="Search different products and add to cart - Example #1.1" time="74.855">
-<failure type="org.openqa.selenium.TimeoutException" message="Expected condition failed: waiting for pages.BasePage$$Lambda/0x000002e201583be8@50133db0 (tried for 50 second(s) with 500 milliseconds interval)
-Build info: version: '4.38.0', revision: '6b412e825c*'
+<testcase classname="Amazon Add to Cart Functionality" name="Search different products and add to cart - Example #1.1" time="282.087">
+<system-out><![CDATA[
+Given I am on Amazon homepage...............................................passed
+When I search for "wireless mouse"..........................................passed
+And I click on the first non-sponsored product..............................passed
+Then I should see the product title and price...............................passed
+When I click on Add to Cart button..........................................passed
+Then I should see "Added to cart" confirmation message......................passed
+]]></system-out>
+</testcase>
+<testcase classname="Amazon Add to Cart Functionality" name="Search different products and add to cart - Example #1.3" time="291.084">
+<failure type="org.openqa.selenium.ScriptTimeoutException" message="script timeout
+  (Session info: chrome=142.0.7444.163)
+Build info: version: '4.35.0', revision: '1c58e5028b'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.135, chrome: {chromedriverVersion: 142.0.7444.162 (c076baf266c..., userDataDir: C:\Users\sreenu\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59753}, goog:processID: 16456, networkConnectionEnabled: false, pageLoadStrategy: none, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59753/devtoo..., se:cdpVersion: 142.0.7444.135, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f23d685952b8b4edd718edd20d81d381">
-<![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for pages.BasePage$$Lambda/0x000002e201583be8@50133db0 (tried for 50 second(s) with 500 milliseconds interval)
-Build info: version: '4.38.0', revision: '6b412e825c*'
+Command: [c560f1b9f9473d09fae471a19080859f, isElementDisplayed {id=f.E112675AB0C98938F98A11D7918AE9CB.d.96BFED811A046E211568B11AFAA35C5D.e.272}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.163, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\sreenu\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57346}, goog:processID: 26788, networkConnectionEnabled: false, pageLoadStrategy: none, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57346/devtoo..., se:cdpVersion: 142.0.7444.163, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[[[ChromeDriver: chrome on windows (c560f1b9f9473d09fae471a19080859f)] -&gt; xpath: //div[@data-component-type='s-search-result'][not(descendant::span[contains(text(),'Sponsored')])]]] -&gt; xpath: .//a[@class='a-link-normal s-no-outline']]
+Session ID: c560f1b9f9473d09fae471a19080859f">
+<![CDATA[org.openqa.selenium.ScriptTimeoutException: script timeout
+  (Session info: chrome=142.0.7444.163)
+Build info: version: '4.35.0', revision: '1c58e5028b'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.135, chrome: {chromedriverVersion: 142.0.7444.162 (c076baf266c..., userDataDir: C:\Users\sreenu\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59753}, goog:processID: 16456, networkConnectionEnabled: false, pageLoadStrategy: none, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59753/devtoo..., se:cdpVersion: 142.0.7444.135, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f23d685952b8b4edd718edd20d81d381
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at pages.BasePage.waitForPageLoad(BasePage.java:71)
-	at pages.HomePage.handleContinueShopping(HomePage.java:52)
-	at stepDefinitions.AmazonSteps.i_am_on_amazon_homepage(AmazonSteps.java:34)
-	at ✽.I am on Amazon homepage(file:///D:/Myprojects/Amazon/src/test/resources/features/AmazonAddToCart.feature:8)
+Command: [c560f1b9f9473d09fae471a19080859f, isElementDisplayed {id=f.E112675AB0C98938F98A11D7918AE9CB.d.96BFED811A046E211568B11AFAA35C5D.e.272}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.163, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\sreenu\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57346}, goog:processID: 26788, networkConnectionEnabled: false, pageLoadStrategy: none, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57346/devtoo..., se:cdpVersion: 142.0.7444.163, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[[[ChromeDriver: chrome on windows (c560f1b9f9473d09fae471a19080859f)] -> xpath: //div[@data-component-type='s-search-result'][not(descendant::span[contains(text(),'Sponsored')])]]] -> xpath: .//a[@class='a-link-normal s-no-outline']]
+Session ID: c560f1b9f9473d09fae471a19080859f
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:282)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at pages.BasePage.waitForElementToBeClickable(BasePage.java:31)
+	at pages.BasePage.clickElement(BasePage.java:39)
+	at pages.SearchResultsPage.clickFirstNonSponsoredProduct(SearchResultsPage.java:51)
+	at stepDefinitions.AmazonSteps.i_click_on_the_first_non_sponsored_product(AmazonSteps.java:58)
+	at ✽.I click on the first non-sponsored product(file:///D:/Myprojects/Amazon/src/test/resources/features/AmazonAddToCart.feature:34)
 ]]>
 </failure>
 <system-out><![CDATA[
-Given I am on Amazon homepage...............................................failed
-When I search for "wireless mouse"..........................................skipped
-And I click on the first non-sponsored product..............................skipped
+Given I am on Amazon homepage...............................................passed
+When I search for "usb cable"...............................................passed
+And I click on the first non-sponsored product..............................failed
 Then I should see the product title and price...............................skipped
 When I click on Add to Cart button..........................................skipped
 Then I should see "Added to cart" confirmation message......................skipped

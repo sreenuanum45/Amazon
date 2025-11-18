@@ -38,6 +38,6 @@ Feature: Amazon Add to Cart Functionality
     Examples:
       | productName      |
       | wireless mouse   |
-#      | laptop stand     |
-#      | usb cable        |
-#      | bluetooth speaker|
+      | laptop stand     |
+      | usb cable        |
+      | bluetooth speaker|

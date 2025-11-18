@@ -14,15 +14,13 @@ import org.testng.annotations.DataProvider;
                 "html:test-output/cucumber-reports/cucumber.html",
                 "json:test-output/cucumber-reports/cucumber.json",
                 "junit:test-output/cucumber-reports/cucumber.xml",
-
                 // Extent Report Plugin
                 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
-
                 // Allure Report Plugin
                 "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm",
-
                 // Timeline Report
                 "timeline:test-output/timeline/"
+
         },
         monochrome = true,
         dryRun = false,
